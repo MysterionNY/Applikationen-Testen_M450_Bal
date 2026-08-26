@@ -18,3 +18,6 @@
 | 2 | PriceCalculation Java File | [PriceCalculation](Aufgaben/Aufgabe%201/PriceCalculation.java) |
 
 ### Tag 2 - Teststrategie(n)
+| # | Thema | Datei |
+|---|-------|-------|
+| 3 | Teststrategien | [Tag 1 Aufgaben](Aufgaben/Aufgabe%202/Teststrategien.md) |
