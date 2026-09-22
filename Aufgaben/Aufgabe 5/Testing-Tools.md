@@ -6,7 +6,7 @@
   - [Automation Testing – Lösung](#automation-testing--lösung)
     - [Ausgangslage](#ausgangslage)
   - [Übung 1 – REST-Schnittstelle automatisiert testen](#übung-1--rest-schnittstelle-automatisiert-testen)
-    - [#Gewähltes Werkzeug](#gewähltes-werkzeug)
+    - [Gewähltes Werkzeug](#gewähltes-werkzeug)
     - [Testfälle](#testfälle)
     - [Beispiel](#beispiel)
     - [Ausführen](#ausführen)
@@ -51,7 +51,7 @@ Das Backend stellt momentan zwei REST-Operationen bereit:
 
 ## Übung 1 – REST-Schnittstelle automatisiert testen
 
-### #Gewähltes Werkzeug
+### Gewähltes Werkzeug
 
 Für die automatisierten REST-Tests verwende ich **JUnit 5 mit `TestRestTemplate`**.
 
@@ -70,6 +70,10 @@ src/test/java/ch/tbz/m450/testing/tools/controller/StudentRestApiTest.java
 | `GET /students` | HTTP-Erfolg, JSON-Antwort und vorhandene Studierende werden zurückgegeben |
 | `POST /students` | Neuer Student wird gespeichert und ist anschliessend über `GET /students` auffindbar |
 | unbekannter Endpunkt | HTTP 404 wird zurückgegeben |
+
+![Students Page](/Aufgaben/Aufgabe%205/Images/StudentsPage.png)
+
+![Json Students](/Aufgaben/Aufgabe%205/Images/JSONStudents.png)
 
 ### Beispiel
 
@@ -103,6 +107,8 @@ mvn test
 ```
 
 Damit werden die Tests automatisch ausgeführt.
+
+![Run Tests](/Aufgaben/Aufgabe%205/Images/TestRuns.png)
 
 ## Übung 2 – Angular End-To-End Test
 
